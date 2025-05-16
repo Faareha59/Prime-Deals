@@ -13,6 +13,29 @@ This repository contains two main components:
 
 - [AboutUs.js](src/screens/AboutUs.js) - The About Us page component
 
+## Complete Code Access
+
+All code files have been copied to the main repository for easy access and review:
+
+- [Frontend Files](main-repo-files/frontend/) - All frontend code including React components, assets, and configuration
+- [Backend Files](main-repo-files/backend/) - All backend code including Express routes, models, and server configuration
+
+## Key Frontend Files
+
+- [Home.js](main-repo-files/frontend/src/screens/Home.js) - Home page component
+- [AboutUs.js](main-repo-files/frontend/src/screens/AboutUs.js) - About Us page component
+- [ContactUs.js](main-repo-files/frontend/src/screens/ContactUs.js) - Contact Us page component
+- [Listings.js](main-repo-files/frontend/src/screens/Listings.js) - Property listings page
+- [Login.js](main-repo-files/frontend/src/screens/Login.js) - User login page
+- [Signup.js](main-repo-files/frontend/src/screens/Signup.js) - User registration page
+
+## Key Backend Files
+
+- [server.js](main-repo-files/backend/server.js) - Main Express server setup
+- [auth.js](main-repo-files/backend/routes/auth.js) - Authentication routes
+- [listings.js](main-repo-files/backend/routes/listings.js) - Property listing routes
+- [Properties.js](main-repo-files/backend/models/Properties.js) - Property database model
+
 ## Features
 
 - Property listings and search
@@ -52,7 +75,7 @@ This repository contains two main components:
 
 ## How to Navigate
 
-The AboutUs.js file is located in the src/screens directory of this repository.
+All files are now available directly in this repository in the `main-repo-files` directory.
 
 ## Getting Started
 
@@ -64,12 +87,12 @@ The AboutUs.js file is located in the src/screens directory of this repository.
 
 ```bash
 # Backend setup
-cd Backend
+cd main-repo-files/backend
 npm install
 npm start
 
 # Frontend setup
-cd frontend
+cd main-repo-files/frontend
 npm install
 npm start
 ``` 
