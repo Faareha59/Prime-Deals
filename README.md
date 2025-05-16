@@ -33,24 +33,24 @@ PrimeDeals is a real estate marketplace web application. The platform allows use
 
 All code files have been copied to the main repository for easy access and review:
 
-- [Frontend Files](main-repo-files/frontend/) - All frontend code including React components, assets, and configuration
-- [Backend Files](main-repo-files/backend/) - All backend code including Express routes, models, and server configuration
+- [Frontend Files](PrimeDeals-App/frontend/) - All frontend code including React components, assets, and configuration
+- [Backend Files](PrimeDeals-App/backend/) - All backend code including Express routes, models, and server configuration
 
 ## Key Frontend Files
 
-- [Home.js](main-repo-files/frontend/src/screens/Home.js) - Home page component
-- [AboutUs.js](main-repo-files/frontend/src/screens/AboutUs.js) - About Us page component
-- [ContactUs.js](main-repo-files/frontend/src/screens/ContactUs.js) - Contact Us page component
-- [Listings.js](main-repo-files/frontend/src/screens/Listings.js) - Property listings page
-- [Login.js](main-repo-files/frontend/src/screens/Login.js) - User login page
-- [Signup.js](main-repo-files/frontend/src/screens/Signup.js) - User registration page
+- [Home.js](PrimeDeals-App/frontend/src/screens/Home.js) - Home page component
+- [AboutUs.js](PrimeDeals-App/frontend/src/screens/AboutUs.js) - About Us page component
+- [ContactUs.js](PrimeDeals-App/frontend/src/screens/ContactUs.js) - Contact Us page component
+- [Listings.js](PrimeDeals-App/frontend/src/screens/Listings.js) - Property listings page
+- [Login.js](PrimeDeals-App/frontend/src/screens/Login.js) - User login page
+- [Signup.js](PrimeDeals-App/frontend/src/screens/Signup.js) - User registration page
 
 ## Key Backend Files
 
-- [server.js](main-repo-files/backend/server.js) - Main Express server setup
-- [auth.js](main-repo-files/backend/routes/auth.js) - Authentication routes
-- [listings.js](main-repo-files/backend/routes/listings.js) - Property listing routes
-- [Properties.js](main-repo-files/backend/models/Properties.js) - Property database model
+- [server.js](PrimeDeals-App/backend/server.js) - Main Express server setup
+- [auth.js](PrimeDeals-App/backend/routes/auth.js) - Authentication routes
+- [listings.js](PrimeDeals-App/backend/routes/listings.js) - Property listing routes
+- [Properties.js](PrimeDeals-App/backend/models/Properties.js) - Property database model
 
 ## Getting Started
 
@@ -62,12 +62,12 @@ All code files have been copied to the main repository for easy access and revie
 
 ```bash
 # Backend setup
-cd main-repo-files/backend
+cd PrimeDeals-App/backend
 npm install
 npm start
 
 # Frontend setup
-cd main-repo-files/frontend
+cd PrimeDeals-App/frontend
 npm install
 npm start
 ```
