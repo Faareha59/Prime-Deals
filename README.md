@@ -9,6 +9,10 @@ This repository contains two main components:
 - **Frontend**: React application with Material UI
 - **Backend**: Node.js/Express server with MongoDB
 
+## Important Files
+
+- [AboutUs.js](src/screens/AboutUs.js) - The About Us page component
+
 ## Features
 
 - Property listings and search
@@ -48,7 +52,7 @@ This repository contains two main components:
 
 ## How to Navigate
 
-The AboutUs.js file is located in the frontend/src/screens directory.
+The AboutUs.js file is located in the src/screens directory of this repository.
 
 ## Getting Started
 
