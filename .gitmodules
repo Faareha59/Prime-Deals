@@ -1,0 +1,9 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Faareha59/Prime-Deals-Frontend.git
+	branch = FrontendTemplate
+
+[submodule "Backend"]
+	path = Backend
+	url = https://github.com/Faareha59/Prime-Deals-Backend.git
+	branch = BackendTemplate 
