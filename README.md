@@ -1,13 +1,29 @@
-# Prime Deals
+# PrimeDeals - Real Estate Marketplace
 
-A real estate platform for property listings, agent management, and appointment booking.
+PrimeDeals is a real estate marketplace web application. The platform allows users to browse property listings, schedule appointments, contact agents, and manage property information.
 
-## Project Structure
+## 🏠 Features
 
-This repository contains two main components:
+- **Property Listings**: Browse through available properties with detailed information
+- **Buy/Rent Options**: Choose to buy or rent properties based on your needs
+- **Agent Directory**: Connect with professional real estate agents
+- **Appointment Scheduling**: Book appointments to view properties
+- **Admin Dashboard**: Manage properties, agents, and appointments
+- **User Authentication**: Secure login and signup functionality
+- **Contact Form**: Get in touch with the PrimeDeals team
 
-- **Frontend**: React application with Material UI
-- **Backend**: Node.js/Express server with MongoDB
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- React Router for navigation
+- Axios for API requests
+- Material UI for styling
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB for the database
 
 ## Important Files
 
@@ -36,47 +52,6 @@ All code files have been copied to the main repository for easy access and revie
 - [listings.js](main-repo-files/backend/routes/listings.js) - Property listing routes
 - [Properties.js](main-repo-files/backend/models/Properties.js) - Property database model
 
-## Features
-
-- Property listings and search
-- Agent profiles and management
-- User authentication
-- Appointment booking
-- Contact form
-- Admin dashboard
-
-## Pages
-
-- Home
-- Listings
-- Property Details
-- About Us
-- Contact Us
-- Agent Profiles
-- Login/Signup
-- Admin Dashboard
-
-## Technologies Used
-
-### Frontend
-- React
-- Material UI
-- React Router
-- Axios
-- Recharts
-
-### Backend
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- JWT Authentication
-- Bcrypt
-
-## How to Navigate
-
-All files are now available directly in this repository in the `main-repo-files` directory.
-
 ## Getting Started
 
 1. Clone the repository
@@ -95,4 +70,39 @@ npm start
 cd main-repo-files/frontend
 npm install
 npm start
+```
+
+7. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:3002
+
+## 🗄️ Database Structure
+
+The application uses MongoDB with the following collections:
+- `agents`: Real estate agent profiles
+- `listings`: Property listings
+- `appointments`: User appointment bookings
+- `contactdatas`: User contact form submissions
+- `properties`: Detailed property information
+
+## 📱 Application Structure
+
+### Frontend
+```
+frontend/
+├── public/
+├── src/
+│   ├── assets/         # Images and static files
+│   ├── components/     # Reusable UI components
+│   ├── screens/        # Page components
+│   ├── App.js          # Main component
+│   └── index.js        # Entry point
+```
+
+### Backend
+```
+Backend/
+├── models/             # Database models
+├── routes/             # API routes
+├── server.js           # Main server file
 ``` 
