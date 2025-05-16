@@ -1,0 +1,304 @@
+/* Modern Admin Dashboard Styling */
+.admin-properties {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 80px 20px 20px 20px;
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+
+.page-header {
+  display: none;
+}
+
+.admin-properties h1 {
+  color: #1B4C7F;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 20px 0;
+  border-bottom: none;
+}
+
+.blue-button {
+  display: none;
+}
+
+/* Table styling */
+.properties-table-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.properties-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow-x: auto;
+}
+
+.properties-table thead {
+  background-color: #1B4C7F;
+  color: white;
+}
+
+.properties-table th {
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.properties-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e5e9f2;
+  color: #4a5568;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.properties-table tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.properties-table tr:hover {
+  background-color: #edf2f7;
+}
+
+.properties-table .description-cell, 
+.properties-table .features-cell {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.edit-button, .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.edit-button {
+  color: #4299e1;
+}
+
+.edit-button:hover {
+  background-color: rgba(66, 153, 225, 0.15);
+}
+
+.delete-button {
+  color: #e53e3e;
+}
+
+.delete-button:hover {
+  background-color: rgba(229, 62, 62, 0.15);
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.popup-content h2 {
+  color: #1B4C7F;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.popup-content form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.popup-content .full-width {
+  grid-column: span 2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.popup-content input,
+.popup-content textarea,
+.popup-content select {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4a5568;
+  transition: all 0.3s ease;
+}
+
+.popup-content input:focus,
+.popup-content textarea:focus,
+.popup-content select:focus {
+  border-color: #4299e1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.popup-content textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.popup-buttons {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.popup-buttons button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.popup-buttons button[type="submit"] {
+  background-color: #1B4C7F;
+  color: white;
+  border: none;
+}
+
+.popup-buttons button[type="submit"]:hover {
+  background-color: #153e69;
+}
+
+.popup-buttons button[type="button"] {
+  background-color: white;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.popup-buttons button[type="button"]:hover {
+  background-color: #f7fafc;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-active {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-pending {
+  background-color: #feebc8;
+  color: #7b341e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .popup-content form {
+    grid-template-columns: 1fr;
+  }
+  
+  .popup-content .full-width {
+    grid-column: span 1;
+  }
+  
+  .popup-buttons {
+    grid-column: span 1;
+  }
+  
+  .properties-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blue-button {
+    margin-top: 15px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7fafc;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup, .popup-content {
+  animation: fadeIn 0.3s ease-out;
+}
+  
