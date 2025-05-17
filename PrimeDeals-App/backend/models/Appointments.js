@@ -3,15 +3,11 @@ const mongoose = require('mongoose');
 const  appointmentSchema= new mongoose.Schema ({
     firstName: String,
     lastName: String,
-    email: String,
-    purchaseType: {
-        type: String,
-        enum: ['buy', 'rent'],
-        default: 'buy'
-    },
-    date: Date,
-    time: String,
-})
+       agent: String,
+    description: String,
+    features: String,
+});
 
-const AppointmentModel =  mongoose.model('Appointments', appointmentSchema);
-module.exports = AppointmentModel;
+// Explicitly set the collection name to 'properties'
+const PropertiesModel = mongoose.model('Properties', propertiesSchema, 'properties');
+module.exports = PropertiesModel;
