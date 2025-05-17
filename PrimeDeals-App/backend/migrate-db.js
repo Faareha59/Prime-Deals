@@ -5,14 +5,12 @@ const path = require('path');
 // Source and destination database URIs
 const sourceUri = 'mongodb://localhost:27017/your_database_name';
 const destUri = 'mongodb://localhost:27017/prime_deals_db';
+// Define MongoDB connection options
+const connectOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+};
 
-// Connect to both databases
-async function connectToDatabases() {
-  // Connect to source database
-  const sourceConnection = await mongoose.createConnection(sourceUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  });
   
   console.log('✅ Connected to source database');
   
