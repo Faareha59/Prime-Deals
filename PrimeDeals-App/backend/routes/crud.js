@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Example agents data (this should be replaced with a real database)
-let agents = [
+let agents= [
   { _id: "1", name: "John Doe", rating: 4.5, nationality: "USA", location: "New York", language: "English", email: "johndoe@example.com", phoneNo: "1234567890", sale: 10, rent: 5 },
   { _id: "2", name: "Jane Smith", rating: 4.8, nationality: "Canada", location: "Toronto", language: "English, French", email: "janesmith@example.com", phoneNo: "0987654321", sale: 20, rent: 10 },
   // Add more agents here as needed
