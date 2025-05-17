@@ -70,7 +70,7 @@ const styles = {
     marginTop: '0.5rem', // Space between heading and subheading
   },
   paragraph: {
-    lineHeight: '1.6',
+    lineHeight: '1.5',
     fontSize: '1rem',
     color: '#333',
     marginTop: '1rem', // Add spacing after subheading
